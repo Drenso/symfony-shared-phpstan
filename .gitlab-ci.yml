@@ -11,8 +11,7 @@ workflow:
 
 variables:
   COMPOSER_MEMORY_LIMIT: -1
-  YAMLLINT_DIRECTORIES: config/packages
-    
+
 include:
   - project: 'intern/runner-templates'
     file: '/symfony/install-dependencies.yml'
@@ -30,9 +29,6 @@ include:
     file: '/php/composer-unused.yml'
     ref: "17.5"
   - project: 'intern/runner-templates'
-    file: '/yaml/yamllint.yml'
-    ref: "17.5"
-  - project: 'intern/runner-templates'
     file: '/deploy/deploy.yml'
     ref: "17.5"
 
@@ -42,12 +38,6 @@ install-dependencies:
   except:
     - main
     - tags
-
-yaml-analysis:
-  except:
-    - schedules
-    - tags
-    - main
 
 composer-require-checker:
   except:
