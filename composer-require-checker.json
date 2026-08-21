@@ -14,7 +14,9 @@
     "PHPStan\\Rules\\Rule",
     "PHPStan\\Rules\\RuleErrorBuilder",
     "PHPStan\\Type\\ObjectType",
-    "PHPStan\\Type\\VerbosityLevel"
+    "PHPStan\\Type\\VerbosityLevel",
+    "Symfony\\Bridge\\Doctrine\\Types\\UlidType",
+    "Symfony\\Component\\Uid\\Ulid"
   ],
   "php-core-extensions" : [
     "Core",

@@ -21,9 +21,7 @@
   "require": {
     "php": "^8.3",
     "nikic/php-parser": "^5",
-    "phpstan/phpstan": "^2.2",
-    "symfony/doctrine-bridge": "~6 || ~7 || ~8",
-    "symfony/uid": "~6 || ~7 || ~8"
+    "phpstan/phpstan": "^2.2"
   },
   "require-dev": {
     "doctrine/orm": "^3",
@@ -31,7 +29,13 @@
     "drenso/symfony-shared" : "~7 || ~8",
     "friendsofphp/php-cs-fixer": "3.95.18",
     "phpstan/phpstan": "2.2.8",
-    "rector/rector": "2.6.1"
+    "rector/rector": "2.6.1",
+    "symfony/doctrine-bridge": "~6 || ~7 || ~8",
+    "symfony/uid": "~6 || ~7 || ~8"
+  },
+  "suggest": {
+    "symfony/doctrine-bridge": "To use Ulid related rules",
+    "symfony/uid": "To use Ulid related rules"
   },
   "config": {
     "preferred-install": "dist",
